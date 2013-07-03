@@ -18,30 +18,30 @@ import java.util.Random;
 public class FieldOfDreamsActivity extends Activity {
 
 
-    private TextView mGameTableView;
-    private TextView mLifeCountView;
-    private TextView mWordDescription;
-    private EditText mInputTextField;
-    private Button mConfimButton;
-    private Button mMakeBaraban;
-    private Button mOpenWord;
-    private TextView mScore;
-    private TextView mTotalScore;
-    private String[] mQuestionBook;
-    private String[] mQuestionDescr;
-    private char[] mQuestWord;
-    private boolean[] mOpendLetter;
-    private int[] mScorePool;
-    private byte mAvaiableLife;
-    private byte mTurnCount;
-    private char mInputLetter;
-    private int mMyScore;
-    private int mBarabanScore;
-    private String mAvaiableLifePrefix;
-    private String mBarabanPrefix;
-    private String mTotalScorePrefix;
-    private String mFullWord;
-    private Random mRandom;
+    private TextView mGameTableView;  //Игровое табло
+    private TextView mLifeCountView; //Табло жизьней игрока
+    private TextView mWordDescription; //Описание слова
+    private EditText mInputTextField;  //Поле для ввода
+    private Button mConfimButton;  //Проверка буквы
+    private Button mMakeBaraban; //Крутить барабан
+    private Button mOpenWord; //Открыть слово
+    private TextView mScore;  //Очки барабана
+    private TextView mTotalScore; //Всего очков
+    private String[] mQuestionBook; //Массив с вопросами
+    private String[] mQuestionDescr; //Массив с описанием
+    private char[] mQuestWord; //Массив с загадыным словом в виде отдельных символов
+    private boolean[] mOpendLetter; //Массив True False
+    private int[] mScorePool; //Очки которые выпадают на барабане
+    private byte mAvaiableLife; //Жизьни игрока
+    private byte mTurnCount; //Переменная туров
+    private char mInputLetter; //Буквы загаданые
+    private int mMyScore; //Количевство очков
+    private int mBarabanScore; //Очки выпавшие на барабане
+    private String mAvaiableLifePrefix;  //Жизьней в начале игры
+    private String mBarabanPrefix;   //Очков в начале игры на  барабане
+    private String mTotalScorePrefix; //Очков в начале игры
+    private String mFullWord;  //Полное слово
+    private Random mRandom; //Генератор случайных цифер
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class FieldOfDreamsActivity extends Activity {
         initViews();
         initGameData();
         createQuest(mTurnCount);
-
+         //TODO перевести все цифровые значения в файл ИНТЕГЕРОВ (уровень, жизни)
     }
 
     private void initViews() {
@@ -88,8 +88,8 @@ public class FieldOfDreamsActivity extends Activity {
                         break;
 
                     case R.id.fod_confim_button_openword:
-                        if (!TextUtils.isEmpty(mInputTextField.getText().toString())) {
-                            mFullWord = mInputTextField.getText().toString().toLowerCase();
+                        if (!TextUtils.isEmpty(mInputTextField.getText().toString())) {    //Проверка поля ввода на наличие буквы/слова
+                            mFullWord = mInputTextField.getText().toString().toLowerCase();  //Запись слова в переменную перевод слова в ижний регистр
                             mInputTextField.setText("");
                             reviewFullWord();
                             switchButtonStatus(true);
@@ -135,7 +135,7 @@ public class FieldOfDreamsActivity extends Activity {
         mQuestionDescr[4] = getString(R.string.fod_quest_5_discr);
         mQuestionDescr[5] = getString(R.string.fod_quest_6_discr);
 
-        mAvaiableLife = 3;
+        mAvaiableLife = 5;
         mTurnCount = 0;
         mMyScore = 0;
         mBarabanScore = 0;
@@ -200,14 +200,7 @@ public class FieldOfDreamsActivity extends Activity {
 
         if (openWordInicator == mQuestWord.length) {
             Toast.makeText(this, getString(R.string.fod_game_win), Toast.LENGTH_SHORT).show();
-
-            if (mTurnCount >= mQuestionBook.length - 1) {
-                startGameOver(GameCode.wordIsOpend);
-                finish();
-                return;
-            } else {
-                makeNextTurn();
-            }
+            isQuestionBookIsEnd();
         }
         makeTurn();
     }
@@ -223,6 +216,7 @@ public class FieldOfDreamsActivity extends Activity {
     private void startGameOver(GameCode pCode) {
         Intent i = new Intent(this, SplashActivity.class);
         startActivity(i);
+        finish();
     }
 
     private void setLifeNumberView() {
@@ -249,8 +243,8 @@ public class FieldOfDreamsActivity extends Activity {
     }
 
     private void makeNextTurn() {
-        mTurnCount++;
         createQuest(mTurnCount);
+        makeTurn();
     }
 
     private void roundBaraban() {
@@ -285,13 +279,21 @@ public class FieldOfDreamsActivity extends Activity {
 
     private void reviewFullWord() {
         if (mFullWord.equals(mQuestionBook[mTurnCount])) {
-            for (int i = 0; i < mOpendLetter.length; i++) {
-                mOpendLetter[i] = true;
-            }
-            makeNextTurn();
+            mMyScore = mMyScore + mBarabanScore;
+            mTurnCount++;
+            isQuestionBookIsEnd();
         } else {
             mAvaiableLife = 0;
             makeTurn();
         }
     }
+
+    private void isQuestionBookIsEnd() {   //TODO Дз задание 1
+        if (mTurnCount >= mQuestionBook.length) {
+            startGameOver(GameCode.wordIsOpend);
+        } else {
+            makeNextTurn();
+        }
+    }
+
 }

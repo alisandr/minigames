@@ -9,7 +9,13 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/start_field_of_dreams_button"
+         />
 
+    <Button
+            android:id="@+id/find_next_number_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_find_next_number_button"
             />
 
 </LinearLayout>

@@ -9,8 +9,22 @@ import com.andrey.minigames.R;
 
 public class SplashActivity extends Activity {
 
-    private Button mStartFieldOfDreamGame;
+    View.OnClickListener fodButtonListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.field_of_dream_button:
+                    startFieldOfDream();
+                    break;
+                case R.id.find_next_number_button:
+                    startFindNextNumber();
+                    break;
+            }
 
+        }
+    };
+    private Button mStartFieldOfDreamGame;
+    private Button mStartFindNextNumber;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,24 +34,22 @@ public class SplashActivity extends Activity {
         initView();
     }
 
-    View.OnClickListener fodButtonListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            startFieldOfDream();
-        }
-    };
-
-    private void initView(){
+    private void initView() {
         mStartFieldOfDreamGame = (Button) findViewById(R.id.field_of_dream_button);
         mStartFieldOfDreamGame.setOnClickListener(fodButtonListener);
+
+        mStartFindNextNumber = (Button) findViewById(R.id.find_next_number_button);
+        mStartFindNextNumber.setOnClickListener(fodButtonListener);
     }
 
-    private void startFieldOfDream(){
+    private void startFieldOfDream() {
         Intent intent = new Intent(this, FieldOfDreamsActivity.class);
         startActivity(intent);
     }
-    private void startFindNextNumber(){
 
+    private void startFindNextNumber() {
+        Intent intent = new Intent(this, FindNextNumberActivity.class);
+        startActivity(intent);
     }
 
 }

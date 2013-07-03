@@ -35,6 +35,8 @@ public class FindNextNumberActivity extends Activity {
         setContentView(R.layout.find_next_number);
         initView();
         initGameData();
+
+        //TODO потестить
     }
 
     private void initView() {
@@ -48,7 +50,10 @@ public class FindNextNumberActivity extends Activity {
     }
 
     private void initGameData() {
+        //TODO пример ИНТЕГЕРОВ
         mQuestionBook = new String[getResources().getInteger(R.integer.fnn_all_level_count)];
+        mAnswerBook = new int[getResources().getInteger(R.integer.fnn_all_level_count)];
+
         mQuestionBook[0] = getString(R.string.fnn_quest_1);
         mQuestionBook[1] = getString(R.string.fnn_quest_2);
         mQuestionBook[2] = getString(R.string.fnn_quest_3);
@@ -63,6 +68,9 @@ public class FindNextNumberActivity extends Activity {
 
         mLife = getResources().getInteger(R.integer.fnn_start_life);
         mLevel = getResources().getInteger(R.integer.fnn_start_level);
+
+        refreshLife();
+        refreshGameQuestAndLevelCount();
     }
 
     private void reviewAnswerAndRefreshInternalData() {
@@ -93,6 +101,7 @@ public class FindNextNumberActivity extends Activity {
     }
 
     private void refreshGameQuestAndLevelCount() {
+        //TODO выяснить и починить, почему первый уровень = 0
         mMainTable.setText(mQuestionBook[mLevel]);
         mLevelCount.setText(getString(R.string.fnn_level_coun_prefix) + " " + String.valueOf(mLevel));
     }

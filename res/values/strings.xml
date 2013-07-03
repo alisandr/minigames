@@ -5,6 +5,7 @@
     <string name="app_fnn_name">Найди следующее число</string>
 
     <string name="start_field_of_dreams_button">Поле чудес</string>
+    <string name="start_find_next_number_button">Найди следующее число</string>
 
     <string name="fod_one_target_hit">Верно, такая буква здесь есть !</string>
     <string name="fod_many_target_hit">Верно такие буквы здесь есть !</string>
