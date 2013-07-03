@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="fnn_unlock_1">500</integer>
+    <integer name="fnn_unlock_2">150</integer>
+    <integer name="fnn_unlock_3">89</integer>
+    <integer name="fnn_unlock_4">2</integer>
+    <integer name="fnn_unlock_5">381</integer>
+
+    <integer name="fnn_start_life">3</integer>
+    <integer name="fnn_start_level">0</integer>
+    <integer name="fnn_all_level_count">5</integer>
+
+</resources>

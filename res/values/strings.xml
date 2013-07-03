@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сборник игр</string>
+    <string name="app_fod_name">Поле чудес</string>
+    <string name="app_fnn_name">Найди следующее число</string>
+
+    <string name="start_field_of_dreams_button">Поле чудес</string>
+
+    <string name="fod_one_target_hit">Верно, такая буква здесь есть !</string>
+    <string name="fod_many_target_hit">Верно такие буквы здесь есть !</string>
+    <string name="fod_target_miss">Нет, такой буквы здесь нет.</string>
+    <string name="fod_make_turn">Делайте ваш ход</string>
+    <string name="fod_make_letter">Введите букву!</string>
+    <string name="fod_false_turn">На барабане 0. Вы теряете все очки.</string>
+
+    <string name="fod_game_win">Верно, вы угадали слово.</string>
+    <string name="fod_game_over">Увы, игра окончена.</string>
+
+    <string name="fod_life_count_prefix">Количество попыток :</string>
+    <string name="fod_baraban_score_prefix">На барабане :</string>
+    <string name="fod_total_score_prefix">Всего очков :</string>
+
+    <string name="fod_quest_1">меркурий</string>
+    <string name="fod_quest_2">наёмник</string>
+    <string name="fod_quest_3">торнадо</string>
+    <string name="fod_quest_4">метро</string>
+    <string name="fod_quest_5">государь</string>
+    <string name="fod_quest_6">земля</string>
+
+    <string name="fod_quest_1_discr">Первая планета в солнечной системе ?</string>
+    <string name="fod_quest_2_discr">Воюющий за деньги воин ?</string>
+    <string name="fod_quest_3_discr">"Кольцевой" вихрь ?</string>
+    <string name="fod_quest_4_discr">Подземный поезд ?</string>
+    <string name="fod_quest_5_discr">Управляющий государством ?</string>
+    <string name="fod_quest_6_discr">Наша планета ?</string>
+
+    <string name="fod_button_open_word_make_baraban">Крутить барабан</string>
+    <string name="fod_button_letter_review">Проверить букву</string>
+    <string name="fod_button_open_word">Открыть слово</string>
+
+
+    <string name="fnn_quest_1">11, 100, 12, 200, 15, ...</string>
+    <string name="fnn_quest_2">170, 160, 180, 150, 190, ...</string>
+    <string name="fnn_quest_3">5, 8, 13, 21, 34, 55 ...</string>
+    <string name="fnn_quest_4">100, 1, 101, 2, 101, ...</string>
+    <string name="fnn_quest_5">18, 21, 30 , 57, 138, ...</string>
+
+    <string name="fnn_life_count_prefix">Количество жизней :</string>
+    <string name="fnn_level_coun_prefix">Уровень :</string>
+
+    <string name="fnn_tour_win">Верно!</string>
+    <string name="fnn_tour_false">Вы ошиблись.</string>
+
+
+
+</resources>
