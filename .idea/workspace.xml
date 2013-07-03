@@ -29,13 +29,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfa37817-60b7-4623-8458-67bfdd23c16f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrey/minigames/Activitys/FieldOfDreamsActivity.java" afterPath="$PROJECT_DIR$/src/com/andrey/minigames/Activitys/FieldOfDreamsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrey/minigames/Activitys/FindNextNumberActivity.java" afterPath="$PROJECT_DIR$/src/com/andrey/minigames/Activitys/FindNextNumberActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrey/minigames/Activitys/SplashActivity.java" afterPath="$PROJECT_DIR$/src/com/andrey/minigames/Activitys/SplashActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/find_next_number.xml" afterPath="$PROJECT_DIR$/res/layout/find_next_number.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/integer.xml" afterPath="$PROJECT_DIR$/res/values/integer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="minigames.iws" />
@@ -50,7 +43,7 @@
     <file path="/sample.java" changelist="cfa37817-60b7-4623-8458-67bfdd23c16f" time="1372697773770" ignored="false" />
     <file path="/FindNextNumber.java" changelist="cfa37817-60b7-4623-8458-67bfdd23c16f" time="1372705466878" ignored="false" />
     <file path="/integer.xml" changelist="cfa37817-60b7-4623-8458-67bfdd23c16f" time="1372701261604" ignored="false" />
-    <file path="/Dummy.txt" changelist="cfa37817-60b7-4623-8458-67bfdd23c16f" time="1372873662189" ignored="false" />
+    <file path="/Dummy.txt" changelist="cfa37817-60b7-4623-8458-67bfdd23c16f" time="1372875320328" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +52,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -114,7 +107,7 @@
       <file leaf-file-name="SplashActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/andrey/minigames/Activitys/SplashActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="36" selection-start="1346" selection-end="1346" vertical-scroll-proportion="1.2136929">
+            <state line="44" column="36" selection-start="1346" selection-end="1346" vertical-scroll-proportion="1.8630574">
               <folding>
                 <element signature="e#308#700#0" expanded="true" />
                 <element signature="e#693#694#0" expanded="true" />
@@ -430,14 +423,18 @@
       <created>1372871182646</created>
       <updated>1372871182646</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="testtwo">
+      <created>1372875390846</created>
+      <updated>1372875390846</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="0" width="999" height="604" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="DeltaChat" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854208" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -445,6 +442,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3094099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19298245" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24975026" sideWeight="0.6707819" order="1" side_tool="false" content_ui="tabs" />
@@ -459,7 +457,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924336" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3094099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -507,7 +504,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="testtwo" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -522,6 +519,8 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="test" />
+    <MESSAGE value="twist" />
+    <MESSAGE value="testtwo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -639,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/andrey/minigames/Activitys/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="36" selection-start="1346" selection-end="1346" vertical-scroll-proportion="1.2136929">
+        <state line="44" column="36" selection-start="1346" selection-end="1346" vertical-scroll-proportion="1.8630574">
           <folding>
             <element signature="e#308#700#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
